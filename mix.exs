@@ -75,6 +75,7 @@ defmodule Accent.Mixfile do
       {:erlsom, "~> 1.5"},
       {:xml_builder, "~> 2.0"},
       {:ex_minimatch, "~> 0.0.1"},
+      {:poison, "~> 3.1"},
 
       # Auth
       {:oauth2, "~> 0.9", override: true},
