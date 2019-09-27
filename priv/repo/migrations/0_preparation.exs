@@ -1,7 +1,3 @@
-defmodule Accent.Repo.Migrations.CreateExtensions do
-  use Ecto.Migration
+use Ecto.Query
 
-  def extensions do
-    execute "CREATE EXTENSION pg_trgm;"
-  end
-end
+execute "CREATE EXTENSION pg_trgm;"
