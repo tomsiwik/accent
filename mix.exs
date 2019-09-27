@@ -78,7 +78,7 @@ defmodule Accent.Mixfile do
       {:poison, "~> 4.0.1"},
 
       # Auth
-      {:oauth2, "~> 0.9", override: true},
+      {:oauth2, "~> 2.0", override: true},
       {:ueberauth, "~> 0.6.1"},
       {:ueberauth_google, "~> 0.9.0"},
       {:ueberauth_github, "~> 0.8.0"},
