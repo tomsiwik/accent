@@ -1,0 +1,24 @@
+2019-09-27 15:37:03.552 CEST [44676] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-27 15:37:03.552 CEST [44676] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-27 15:37:03.553 CEST [44676] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-09-27 15:37:03.561 CEST [44677] LOG:  database system was shut down at 2019-09-27 15:36:41 CEST
+2019-09-27 15:37:03.564 CEST [44676] LOG:  database system is ready to accept connections
+2019-09-27 15:37:21.733 CEST [44983] ERROR:  extension "pg_trgm" already exists
+2019-09-27 15:37:21.733 CEST [44983] STATEMENT:  CREATE EXTENSION pg_trgm
+2019-09-27 15:38:20.862 CEST [46000] ERROR:  database "accent_development" already exists
+2019-09-27 15:38:20.862 CEST [46000] STATEMENT:  CREATE DATABASE "accent_development" ENCODING 'UTF8'
+2019-09-27 15:38:20.967 CEST [46002] ERROR:  extension "pg_trgm" already exists
+2019-09-27 15:38:20.967 CEST [46002] STATEMENT:  CREATE EXTENSION pg_trgm
+2019-09-27 15:39:17.359 CEST [46908] ERROR:  database "accent_development" already exists
+2019-09-27 15:39:17.359 CEST [46908] STATEMENT:  CREATE DATABASE "accent_development" ENCODING 'UTF8'
+2019-09-27 15:39:17.464 CEST [46910] ERROR:  extension "pg_trgm" already exists
+2019-09-27 15:39:17.464 CEST [46910] STATEMENT:  CREATE EXTENSION pg_trgm
+2019-09-27 15:39:21.578 CEST [47052] ERROR:  database "accent_development" already exists
+2019-09-27 15:39:21.578 CEST [47052] STATEMENT:  CREATE DATABASE "accent_development" ENCODING 'UTF8'
+2019-09-27 15:39:21.686 CEST [47054] ERROR:  extension "pg_trgm" already exists
+2019-09-27 15:39:21.686 CEST [47054] STATEMENT:  CREATE EXTENSION pg_trgm
+2019-09-27 15:57:30.735 CEST [53259] ERROR:  database "accent_development" already exists
+2019-09-27 15:57:30.735 CEST [53259] STATEMENT:  CREATE DATABASE "accent_development" ENCODING 'UTF8'
+2019-09-27 15:57:36.875 CEST [53268] ERROR:  duplicate key value violates unique constraint "documents_path_format_project_id_index"
+2019-09-27 15:57:36.875 CEST [53268] DETAIL:  Key (path, format, project_id)=(test2, json, 09e85c5d-81a5-4e35-9bde-3b1400a94c18) already exists.
+2019-09-27 15:57:36.875 CEST [53268] STATEMENT:  UPDATE "documents" SET "path" = $1, "updated_at" = $2 WHERE "id" = $3

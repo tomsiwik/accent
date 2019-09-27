@@ -4,7 +4,7 @@ defmodule Accent.Repo.Migrations.AddTrigramIndicesOnSearchableFields do
   def change do
     # Only superuser can create extensions. If you are not superuser of the database, you need to create the
     # extension manually before executing the migration.
-    if superuser?(), do: execute("CREATE EXTENSION pg_trgm", "DROP EXTENSION pg_trgm")
+    if superuser?() or System.get_env("DYNO"), do: execute("CREATE EXTENSION IF NOT EXISTS pg_trgm", "DROP EXTENSION IF EXISTS pg_trgm")
 
     create(index(:languages, ["name gin_trgm_ops"], using: :gin))
     create(index(:projects, ["name gin_trgm_ops"], using: :gin))
