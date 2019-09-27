@@ -1,3 +1,10 @@
-use Ecto.Query
+defmodule MyApp.Repo.Migrations.CreateTrgmExtension do
+  use Ecto.Migration
 
-execute "CREATE EXTENSION pg_trgm;"
+  def change do
+    execute(
+      "CREATE EXTENSION IF NOT EXISTS pg_trgm",
+      "DROP EXTENSION IF EXISTS pg_trgm"
+    )
+  end
+end
